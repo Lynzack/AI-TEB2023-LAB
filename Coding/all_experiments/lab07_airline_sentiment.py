@@ -36,7 +36,7 @@ def metrics(name, y, pred):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--data", default="all_datasets/lab07-Tweets.csv")
+    ap.add_argument("--data", default="../all_datasets/lab07-Tweets.csv")
     ap.add_argument("--out", default="lab7_results")
     args = ap.parse_args()
     out = Path(args.out); out.mkdir(parents=True, exist_ok=True)
